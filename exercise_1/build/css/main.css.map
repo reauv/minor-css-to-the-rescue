@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.styl"],"names":[],"mappings":"AAAA;EACI,YAAY,WAAZ;;AAEJ;EACI,WAAW,KAAX;EACA,QAAQ,KAAR","file":"main.css","sourceRoot":"/source/","sourcesContent":["*\n    box-sizing: border-box;\n\nimg\n    max-width: 100%\n    height: auto\n\n\n"]}
