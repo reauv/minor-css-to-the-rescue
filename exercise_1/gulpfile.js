@@ -12,7 +12,8 @@ gulp.task('css', function () {
     .pipe(stylus())
     .pipe(autoprefixer({
         browsers: ['last 2 versions'],
-        cascade: false
+        cascade: false,
+        grid: false,
     }))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./build/css'))
