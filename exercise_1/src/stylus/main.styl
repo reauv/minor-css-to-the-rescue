@@ -71,7 +71,7 @@ button
     color: #FFFFFF
     padding: 1em 0
 
-    @media (min-width: 50em)
+    @media (min-width: 40em)
         width: 25%
         height: 100%
         position: fixed
@@ -299,30 +299,32 @@ button
 
 
 .c-footer
-    display: flex
-    flex-direction: column
-    max-width: 70em
-    padding: 2em
     background: #2B4450
     color: #FFF
+    grid-row: 5
+    grid-column: 2 
 
-    @media (min-width: 60em)
-        flex-direction: row
-        justify-content: space-between
-        margin-left: 17.5em
-
-    @supports (display: grid)
-        display: grid
-        grid-row: 5
-        grid-column: 2 
-        margin-left: 0
-
-        @media (max-width: 60em)
-            grid-template-columns: 0
-            grid-auto-rows: auto
+    &__wrapper
+        max-width: 70em
+        display: flex
+        flex-direction: column
+        padding: 2em
 
         @media (min-width: 60em)
-            grid-auto-columns: 33.3% 
+            flex-direction: row
+            justify-content: space-between
+            margin-left: 17.5em
+
+        @supports (display: grid)
+            display: grid
+            margin-left: 0
+
+            @media (max-width: 60em)
+                grid-template-columns: 1
+                grid-auto-rows: auto
+
+            @media (min-width: 60em)
+                grid-auto-columns: 33.3% 
 
     &__nav
         margin-bottom: 2em
@@ -366,6 +368,7 @@ button
 
     &__address
         order: -1
+        margin-bottom: 2em
 
         @supports (display: grid)
             @media (max-width: 60em)
@@ -374,6 +377,8 @@ button
             @media (min-width: 60em)
                 grid-column: 1
 
-        pre
-            tab-size: 0
+        ul
+            list-style: none
+            padding: 0
+            margin: 0
 
