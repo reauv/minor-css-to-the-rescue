@@ -3,12 +3,17 @@ var watch = require('gulp-watch');
 var stylus = require('gulp-stylus');
 var plumber = require('gulp-plumber');
 var sourcemaps = require('gulp-sourcemaps');
+var autoprefixer = require('gulp-autoprefixer');
 var browserSync = require('browser-sync').create();
 
 gulp.task('css', function () {
   return gulp.src('./src/stylus/main.styl')
     .pipe(sourcemaps.init())
     .pipe(stylus())
+    .pipe(autoprefixer({
+        browsers: ['last 2 versions'],
+        cascade: false
+    }))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./build/css'))
     .pipe(browserSync.stream());
