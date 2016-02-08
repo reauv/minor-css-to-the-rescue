@@ -1,384 +1,384 @@
 @font-face
-    font-family: Ampersand
-    src: local('Baskerville-Italic'),
-         local('GoudyOldStyleT-Italic'),
-         local('Palatino-Italic'),
-         local('BookAntiqua-Italic')
-    unicode-range: U+26
+	font-family: Ampersand
+	src: local('Baskerville-Italic'),
+		 local('GoudyOldStyleT-Italic'),
+		 local('Palatino-Italic'),
+		 local('BookAntiqua-Italic')
+	unicode-range: U+26
 
 *
-    box-sizing: border-box
+	box-sizing: border-box
 
 img
-    max-width: 100%
-    height: auto
+	max-width: 100%
+	height: auto
 
 body, input, textarea, button, pre
-    margin: 0
-    font-family: 'Fauna One', serif
+	margin: 0
+	font-family: 'Fauna One', serif
 
 h1, h2, h3, h4, h5
-    margin-top: 0
-    font-family: 'Ampersand', 'Playfair Display', serif
-    font-weight: 400
+	margin-top: 0
+	font-family: 'Ampersand', 'Playfair Display', serif
+	font-weight: 400
 
 a
-    color: inherit
-    text-decoration: inherit
+	color: inherit
+	text-decoration: inherit
 
 p
-    max-width: 50em
-    margin-top: 0
+	max-width: 50em
+	margin-top: 0
 
 input
-    border: 0
-    border-radius: 0
-    padding: 0.25em 0
-    border-bottom: 1px solid #333
-    font-size: 1em
-    transition: border-color 0.2s ease-in
-    
-    &:focus
-        outline: 0
-        border-color: #F78536
+	border: 0
+	border-radius: 0
+	padding: 0.25em 0
+	border-bottom: 1px solid #333
+	font-size: 1em
+	transition: border-color 0.2s ease-in
+
+	&:focus
+		outline: 0
+		border-color: #F78536
 
 button
-    border: 0
-    border-radius: 2px
-    background: transparent
-    font-size: 1em
-    padding: 0.75em
-    cursor: pointer
-    background: #497285
-    color: #FFF
-    outline: 0
-    transition: all 0.2s ease-in
-    box-shadow: 3px 3px 0 rgba(0,0,0,0.25)
+	border: 0
+	border-radius: 2px
+	background: transparent
+	font-size: 1em
+	padding: 0.75em
+	cursor: pointer
+	background: #497285
+	color: #FFF
+	outline: 0
+	transition: all 0.2s ease-in
+	box-shadow: 3px 3px 0 rgba(0,0,0,0.25)
 
-    &:hover
-        background: #2B4450
-        box-shadow: 5px 5px 0 rgba(0,0,0,0.25)
+	&:hover
+		background: #2B4450
+		box-shadow: 5px 5px 0 rgba(0,0,0,0.25)
 
 .c-body
-    @media (min-width: 40em)
-        display: grid
-        grid-template-rows: auto 15px auto 15px auto
-        grid-template-columns: 17.5em 1fr
-        
+	@media (min-width: 40em)
+		display: grid
+		grid-template-rows: auto 15px auto 15px auto
+		grid-template-columns: 17.5em 1fr
+
 
 .c-header
-    background: #497285
-    color: #FFFFFF
-    padding: 1em 0
+	background: #497285
+	color: #FFFFFF
+	padding: 1em 0
 
-    @media (min-width: 40em)
-        width: 25%
-        height: 100%
-        position: fixed
-        width: 17.5em
-        grid-row: 1/6
-        grid-column: 1
+	@media (min-width: 40em)
+		width: 25%
+		height: 100%
+		position: fixed
+		width: 17.5em
+		grid-row: 1/6
+		grid-column: 1
 
 
-    &__title
-        text-align: center
-        text-transform: uppercase
-        padding: 0 1rem
-        text-shadow: -.07em .07em rgba(255,255,255,0.3)
+	&__title
+		text-align: center
+		text-transform: uppercase
+		padding: 0 1rem
+		text-shadow: -.07em .07em rgba(255,255,255,0.3)
 
-    &__picture
-        text-align: center
+	&__picture
+		text-align: center
 
-        img
-            border: 2px solid #2B4450
-            border-radius: 50%
+		img
+			border: 2px solid #2B4450
+			border-radius: 50%
 
-    &__welcome
-        text-align: center
+	&__welcome
+		text-align: center
 
-    &__nav
-        ul
-            margin: 0
-            padding: 0
+	&__nav
+		ul
+			margin: 0
+			padding: 0
 
-        li
-            display: block
-            background: #497285
-            transition: all 0.2s ease-in
+		li
+			display: block
+			background: #497285
+			transition: all 0.2s ease-in
 
-            &:hover 
-                background: #2B4450
-                color: #F78536
-                
-                svg
-                    fill: #F78536
+			&:hover
+				background: #2B4450
+				color: #F78536
 
-            a
-                display: block
-                padding: 0.5em 1em
+				svg
+					fill: #F78536
 
-        svg
-            width: 1em 
-            height: 1em
-            vertical-align: bottom
-            margin-right: 1em
-            transition: fill 0.2s ease-in
-            fill: #FFFFFF
+			a
+				display: block
+				padding: 0.5em 1em
+
+		svg
+			width: 1em
+			height: 1em
+			vertical-align: bottom
+			margin-right: 1em
+			transition: fill 0.2s ease-in
+			fill: #FFFFFF
 
 .c-main
-    padding: 1em
-    max-width: 70em
+	padding: 1em
+	max-width: 70em
 
-    @media (min-width: 50em)
-        margin-left: 17.5em 
-        padding: 2em
+	@media (min-width: 50em)
+		margin-left: 17.5em
+		padding: 2em
 
-    @supports (display: grid)
-        grid-row: 1
-        grid-column: 2
-        margin-left: 0
+	@supports (display: grid)
+		grid-row: 1
+		grid-column: 2
+		margin-left: 0
 
-    &__intro
-        &__header
-            text-align: center
+	&__intro
+		&__header
+			text-align: center
 
-            h1
-                font-size: 3em
-                margin-bottom: 0
-                color: #333 
-                text-shadow: -.07em .07em rgba(#2B4450,0.3)
-                font-weight: bold
-                text-transform: uppercase
-                margin-bottom: 0
+			h1
+				font-size: 3em
+				margin-bottom: 0
+				color: #333
+				text-shadow: -.07em .07em rgba(#2B4450,0.3)
+				font-weight: bold
+				text-transform: uppercase
+				margin-bottom: 0
 
-                @media (min-width: 25em)
-                    font-size: 4em
+				@media (min-width: 25em)
+					font-size: 4em
 
-                span
-                    font-size: 1rem
+				span
+					font-size: 1rem
 
-        p
-            margin: 0 auto
+		p
+			margin: 0 auto
 
-    &__block
-        margin-bottom: 4em
+	&__block
+		margin-bottom: 4em
 
 .c-password
-    &__form
-        fieldset
-            padding: 0.75em
-            border: 1px solid rgba(0,0,0,0.35)
+	&__form
+		fieldset
+			padding: 0.75em
+			border: 1px solid rgba(0,0,0,0.35)
 
-            @media (min-width: 30em)
-                padding: 2em 2em 1em 2em
+			@media (min-width: 30em)
+				padding: 2em 2em 1em 2em
 
-            &:focus
-                background: yellow
+			&:focus
+				background: yellow
 
-        legend
-            padding: 0 1em
+		legend
+			padding: 0 1em
 
-        label
-            display: flex
-            flex-direction: column
-            margin-bottom: 2em
+		label
+			display: flex
+			flex-direction: column
+			margin-bottom: 2em
 
-            @media (min-width: 30em)
-                align-items: center
-                flex-direction: row
+			@media (min-width: 30em)
+				align-items: center
+				flex-direction: row
 
-            span
-                order: 1
-                flex: 1
+			span
+				order: 1
+				flex: 1
 
-                @media (min-width: 30em)
-                    flex: 30%
+				@media (min-width: 30em)
+					flex: 30%
 
-            input
-                order: 2
-                flex: 1
+			input
+				order: 2
+				flex: 1
 
-                @media (min-width: 30em)
-                    flex: 70%
+				@media (min-width: 30em)
+					flex: 70%
 
-        button
-            margin: 3em 0 0 auto
+		button
+			margin: 3em 0 0 auto
 
 .c-photo-album
-    
-    &__wrapper
-        display: flex
-        flex-direction: column
 
-        @media (min-width: 50em)
-            flex-direction: row 
+	&__wrapper
+		display: flex
+		flex-direction: column
 
-    &__figure
-        margin: 0 0 1em 0
+		@media (min-width: 50em)
+			flex-direction: row
 
-        @media (min-width: 50em)
-            flex: calc(50% - 0.5em)
-            margin: 0
-            padding: 0 0.5em 0 0
+	&__figure
+		margin: 0 0 1em 0
 
-            &:last-child
-                padding: 0 0 0 0.5em
+		@media (min-width: 50em)
+			flex: calc(50% - 0.5em)
+			margin: 0
+			padding: 0 0.5em 0 0
 
-        &:hover
-            .c-photo-album__figure__zoom
-                display: inline
-                transform: translate(-50%, -50%) scale(1)
+			&:last-child
+				padding: 0 0 0 0.5em
 
-        label
-            position: relative
-            display: inline-block
-            cursor: pointer
+		&:hover
+			.c-photo-album__figure__zoom
+				display: inline
+				transform: translate(-50%, -50%) scale(1)
 
-        img
-            display: block
+		label
+			position: relative
+			display: inline-block
+			cursor: pointer
 
-        &__zoom
-            position: absolute
-            z-index: 50
-            top: 50%
-            left: 50%
-            transform: translate(-50%, -50%) scale(0)
-            width: 6em
-            height: 6em
-            padding: 1.5em
-            fill: white
-            border-radius: 50%
-            background: black
-            transition: transform 0.1s ease-in
+		img
+			display: block
 
-            svg
-                width: 100%
-                height: 100%
+		&__zoom
+			position: absolute
+			z-index: 50
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%) scale(0)
+			width: 6em
+			height: 6em
+			padding: 1.5em
+			fill: white
+			border-radius: 50%
+			background: black
+			transition: transform 0.1s ease-in
 
-        input
-            display: none
+			svg
+				width: 100%
+				height: 100%
 
-            &:checked
-                & + label
-                    position: fixed
-                    display: flex
-                    justify-content: center
-                    align-items: center
-                    top: 0
-                    right: 0
-                    bottom: 0
-                    left: 0
-                    height: 100%
-                    width: 100%
-                    background: black
-                    z-index: 999
+		input
+			display: none
 
-                    &:before
-                        content: "x"
-                        position: absolute
-                        top: 1em
-                        right: 1em
-                        font-size: 2em
-                        color: white
-                        cursor: pointer
+			&:checked
+				& + label
+					position: fixed
+					display: flex
+					justify-content: center
+					align-items: center
+					top: 0
+					right: 0
+					bottom: 0
+					left: 0
+					height: 100%
+					width: 100%
+					background: black
+					z-index: 999
 
-                    img
-                        border: 2px solid white
-                        transform: scale(0)
-                        animation: show-image 0.3s 0.1s forwards
+					&:before
+						content: "x"
+						position: absolute
+						top: 1em
+						right: 1em
+						font-size: 2em
+						color: white
+						cursor: pointer
 
-                    .c-photo-album__figure__zoom
-                        display: none
+					img
+						border: 2px solid white
+						transform: scale(0)
+						animation: show-image 0.3s 0.1s forwards
+
+					.c-photo-album__figure__zoom
+						display: none
 
 
 @keyframes show-image
-    0%
-        transform: scale(0)
-    100%
-        transform: scale(1)
+	0%
+		transform: scale(0)
+	100%
+		transform: scale(1)
 
 
 .c-footer
-    background: #2B4450
-    color: #FFF
-    grid-row: 5
-    grid-column: 2 
+	background: #2B4450
+	color: #FFF
+	grid-row: 5
+	grid-column: 2
 
-    &__wrapper
-        max-width: 70em
-        display: flex
-        flex-direction: column
-        padding: 2em
+	&__wrapper
+		max-width: 70em
+		display: flex
+		flex-direction: column
+		padding: 2em
 
-        @media (min-width: 60em)
-            flex-direction: row
-            justify-content: space-between
-            margin-left: 17.5em
+		@media (min-width: 60em)
+			flex-direction: row
+			justify-content: space-between
+			margin-left: 17.5em
 
-        @supports (display: grid)
-            display: grid
-            margin-left: 0
+		@supports (display: grid)
+			display: grid
+			margin-left: 0
 
-            @media (max-width: 60em)
-                grid-template-columns: 1
-                grid-auto-rows: auto
+			@media (max-width: 60em)
+				grid-template-columns: 1
+				grid-auto-rows: auto
 
-            @media (min-width: 60em)
-                grid-auto-columns: 33.3% 
+			@media (min-width: 60em)
+				grid-auto-columns: 33.3%
 
-    &__nav
-        margin-bottom: 2em
+	&__nav
+		margin-bottom: 2em
 
-        &:first-of-type 
-            @media (max-width: 60em)
-                grid-row: 2
+		&:first-of-type
+			@media (max-width: 60em)
+				grid-row: 2
 
-            @media (min-width: 60em)
-                grid-column: 2
+			@media (min-width: 60em)
+				grid-column: 2
 
-        &:last-of-type
-            @media (max-width: 60em)
-                grid-row: 3
+		&:last-of-type
+			@media (max-width: 60em)
+				grid-row: 3
 
-            @media (min-width: 60em)
-                grid-column: 3
+			@media (min-width: 60em)
+				grid-column: 3
 
-        ul
-            list-style: none
-            line-height: 1.5
-            padding: 0
-            margin: 0
+		ul
+			list-style: none
+			line-height: 1.5
+			padding: 0
+			margin: 0
 
-        a
-            position: relative
+		a
+			position: relative
 
-            &:before
-                position: absolute
-                content: ''
-                display: block
-                height: 1px
-                width: 0%
-                bottom: -1px
-                background: #F78536
-                transition: width 0.2s ease-in
-            
-            &:hover
-                &:before
-                    width: 100%
+			&:before
+				position: absolute
+				content: ''
+				display: block
+				height: 1px
+				width: 0%
+				bottom: -1px
+				background: #F78536
+				transition: width 0.2s ease-in
 
-    &__address
-        order: -1
-        margin-bottom: 2em
+			&:hover
+				&:before
+					width: 100%
 
-        @supports (display: grid)
-            @media (max-width: 60em)
-                grid-row: 1
+	&__address
+		order: -1
+		margin-bottom: 2em
 
-            @media (min-width: 60em)
-                grid-column: 1
+		@supports (display: grid)
+			@media (max-width: 60em)
+				grid-row: 1
 
-        ul
-            list-style: none
-            padding: 0
-            margin: 0
+			@media (min-width: 60em)
+				grid-column: 1
+
+		ul
+			list-style: none
+			padding: 0
+			margin: 0
 
