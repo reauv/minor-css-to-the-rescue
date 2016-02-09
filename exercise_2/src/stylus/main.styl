@@ -42,7 +42,8 @@ input
 		outline: 0
 		border-color: #F78536
 
-button
+.o-button
+	display: inline-block
 	border: 0
 	border-radius: 2px
 	background: transparent
@@ -206,6 +207,106 @@ button
 
 		button
 			margin: 3em 0 0 auto
+
+.c-profile-picture
+	display: none
+	flex-wrap: wrap
+	justify-content: space-between
+	align-content: center
+	padding: 1em 3em
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background: rgba(0,0,0,0.95)
+	z-index: 999
+	color: #FFFFFF
+	overflow: scroll
+
+	&:target
+		display: flex
+
+	&__close
+		position: absolute
+		right: 1em
+		top: 1em
+		font-size: 2em
+
+	&__header
+		flex: 100%
+		text-align: center
+		margin-bottom: 2em
+
+	&__upload
+		flex: 0 0 calc(50% - 1em)
+		display: flex
+		flex-wrap: wrap
+		align-content: flex-start
+		text-align: center
+
+		h3
+			margin: 0 auto 3em auto
+
+		figure
+			flex: 100%
+			margin: 0
+
+			img
+				max-width: 10em
+				border-radius: 50%
+				text-align: center
+
+		&__action
+			margin-top: 3em
+			flex: 0 0 100%
+
+
+	&__filters
+		flex: 0 0 calc(50% - 1em)
+		display: flex
+		flex-wrap: wrap
+		align-content: flex-start
+		justify-content: space-around
+
+		header
+			flex: 100%
+			margin-bottom: 3em
+			text-align: center
+
+			h3
+				margin: 0
+
+		&__image
+			margin: 0 0 2em 0
+			flex: 0 0 calc(33.3% - 2em)
+			text-align: center
+			cursor: pointer
+
+			img
+				display: block
+				border-radius: 50%
+				margin-bottom: 1em
+
+			&--lighten img
+				filter: brightness(0.5)
+
+			&--blur img
+				filter: blur(3px)
+
+			&--grayscale img
+				filter: grayscale(1)
+
+			&--sepia img
+				filter: sepia(1)
+
+			&--invert img
+				filter: invert(1)
+
+		&__action
+			margin-top: 2em
+			flex: 100%
+			text-align: center
 
 .c-photo-album
 
