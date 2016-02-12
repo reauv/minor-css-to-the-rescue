@@ -1,7 +1,7 @@
-# CSS to the rescue - exercise 1
+# CSS to the rescue - exercise 2
 
 ## Demo
-[Demo available here](http://css-one.rovansteen.nl)
+[Demo available here](http://css-two.rovansteen.nl)
 
 ## Source code
 The CSS is written with Stylus as preprocesser, therefore the compiled source code is not available in the repository but the latest can ve viewed [here](http://css-one.rovansteen.nl/css/main.css).
